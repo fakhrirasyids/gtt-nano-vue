@@ -57,22 +57,36 @@
               <Transition name="dropdown">
                 <div
                   v-if="pipelineOpen"
-                  class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[560px] rounded-2xl bg-white shadow-[0_20px_60px_rgba(0,0,0,0.18)] border border-black/8 overflow-hidden"
+                  class="fixed left-1/2 top-[76px] w-[980px] max-w-[calc(100vw-2rem)] -translate-x-1/2 overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_24px_70px_rgba(0,0,0,0.2)]"
                 >
-                  <div class="p-4 grid grid-cols-2 gap-3">
+                  <div class="border-b border-black/10 px-8 py-5">
+                    <p class="font-['Volkhov'] text-[23px] font-bold leading-none text-[#101828]">Products Pipeline</p>
+                  </div>
+
+                  <div class="grid grid-cols-4 gap-7 px-8 pb-8 pt-6">
                     <button
                       v-for="item in pipelineItems"
                       :key="item.page"
-                      class="flex gap-3 items-start p-3 rounded-xl hover:bg-gray-50 transition-colors text-left group"
+                      class="group rounded-[8px] text-left transition-transform duration-200 hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#009689] focus-visible:ring-offset-4"
                       @click="goToPipeline(item.page)"
                     >
-                      <div class="w-16 h-14 rounded-lg overflow-hidden flex-shrink-0 border border-black/8">
-                        <img :src="item.image" :alt="item.title" class="w-full h-full object-cover" />
+                      <div class="h-[126px] overflow-hidden rounded-[8px] bg-gray-100">
+                        <img
+                          :src="item.image"
+                          :alt="item.title"
+                          class="h-full w-full object-cover"
+                          :class="item.imageClass"
+                        />
                       </div>
-                      <div>
-                        <p class="font-semibold text-[13px] text-[#101828] group-hover:text-[#009689] transition-colors leading-tight">{{ item.title }}</p>
-                        <p class="text-[12px] text-[#475467] mt-1 leading-snug">{{ item.desc }}</p>
-                      </div>
+                      <h3 class="mt-6 text-[16px] font-bold leading-snug text-[#101828] transition-colors group-hover:text-[#009689]">
+                        {{ item.title }}
+                      </h3>
+                      <p class="mt-2 text-[13px] leading-[1.35] text-[#667085]">
+                        <template v-for="(part, index) in item.desc" :key="index">
+                          <strong v-if="part.bold" class="font-bold text-[#344054]">{{ part.text }}</strong>
+                          <span v-else>{{ part.text }}</span>
+                        </template>
+                      </p>
                     </button>
                   </div>
                 </div>
@@ -126,7 +140,7 @@ import imgLogo from '@/assets/gtt/09100268d4e53aba4728250212eca777cd8fb25b.png'
 import heroSlide02 from '@/assets/gtt/c0ab7a1d4dda2bd0ad42477b59706868447935b6.png'
 import heroSlide03 from '@/assets/gtt/96f118309c104bbe9320c0a3eec34d6a987a4d08.png'
 import heroSlide04 from '@/assets/gtt/5d65a2acd9cbca36d942b6f6bd3cd48054e18b26.jpg'
-import imgNext from '@/assets/gtt/9c9ace973e69ea70ca9c9ac8c5ee50d97b45ef8b.png'
+import imgNext from '@/assets/gtt/12b1ceaf647f00d1aa5ee32ec916614e30e3aa5f.png'
 
 import type { PageName } from '@/App.vue'
 
@@ -150,26 +164,39 @@ const isPipelinePage = computed(() =>
 const pipelineItems = [
   {
     page: 'gttn-dx' as PageName,
-    title: 'GTTN-Dx / GTTN-SCI',
-    desc: 'For Cancer Early Screening and Research Use. cFDA registered and commercially available.',
+    title: 'GTTN-Dx GTTN-SCI',
+    desc: [
+      { text: 'For Cancer Early Screening and Research Use. Products have already received cFDA registration approval and are now ' },
+      { text: 'commercially available.', bold: true },
+    ],
     image: heroSlide02,
+    imageClass: 'object-left',
   },
   {
     page: 'gttn-navi' as PageName,
     title: 'GTTN-Navi',
-    desc: 'For Cancer Early Screening and Research Use. cFDA registered and commercially available.',
+    desc: [
+      { text: 'For Cancer Early Screening and Research Use. Products have already received cFDA registration approval and are now ' },
+      { text: 'commercially available.', bold: true },
+    ],
     image: heroSlide03,
   },
   {
     page: 'gttn-tx' as PageName,
     title: 'GTTN-Tx',
-    desc: 'Drug-device combination under innovative device review, projected approval by 2029.',
+    desc: [
+      { text: 'It has obtained classification as a drug-device combination and is now under innovative device review, with projected ' },
+      { text: 'approval by 2029.', bold: true },
+    ],
     image: heroSlide04,
   },
   {
     page: 'home' as PageName,
     title: 'Next in Line',
-    desc: 'Lymphatic tumor navigation, CT/MRI contrast agents, and radiopharmaceutical carriers.',
+    desc: [
+      { text: 'lymphatic tumor navigation, CT/MRI contrast agents, and radiopharmaceutical carriers, several entering ' },
+      { text: 'regulatory submission soon.', bold: true },
+    ],
     image: imgNext,
   },
 ]

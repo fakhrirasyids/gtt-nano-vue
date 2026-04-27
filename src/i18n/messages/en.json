@@ -5,7 +5,7 @@
     "zh": "中文"
   },
   "languageSwitcher": {
-    "shortEn": "EN",
+    "shortEn": "English",
     "shortId": "ID",
     "shortZh": "中文"
   },
@@ -232,6 +232,73 @@
     "cardTitle": "Ready to see the platform live?",
     "cardBody": "Talk with GTTNano about product readiness, clinical positioning, and commercial deployment.",
     "button": "Request a Live Demo"
+  },
+  "aboutPage": {
+    "kicker": "About GTT Nano",
+    "title": "Revolutionizing Cancer Detection and Treatment",
+    "subtitle": "GTT Nano is pioneering next-generation nanotechnology solutions for precision oncology, bridging the gap between early detection and targeted therapy.",
+    "mission": {
+      "title": "Our Mission",
+      "body": "To transform cancer care by delivering precision diagnostic and therapeutic tools that enable earlier detection, more accurate treatment, and better patient outcomes. We're committed to solving oncology's most critical challenges through innovative nanotechnology."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "body": "A future where cancer is detected at its earliest stages and treated with unprecedented precision, minimizing harm to healthy tissue while maximizing therapeutic efficacy. We envision a world where our technology becomes the standard of care in oncology."
+    },
+    "technology": {
+      "title": "Our Technology",
+      "items": {
+        "precision": {
+          "title": "Nano-Scale Precision",
+          "body": "Our proprietary nanoparticles target cancer cells with unprecedented accuracy, enabling both imaging and therapy at the cellular level."
+        },
+        "detection": {
+          "title": "Early Detection",
+          "body": "Detect cancer at its earliest stages when treatment is most effective, dramatically improving patient survival rates."
+        },
+        "therapy": {
+          "title": "Targeted Therapy",
+          "body": "Deliver therapeutic agents directly to tumor cells, minimizing side effects and maximizing treatment efficacy."
+        }
+      }
+    }
+  },
+  "contactPage": {
+    "kicker": "Get in Touch",
+    "title": "Let's Discuss How We Can Help",
+    "subtitle": "Whether you're interested in a demo, partnership opportunities, or have questions about our technology, we'd love to hear from you.",
+    "info": {
+      "title": "Contact\nInformation",
+      "email": {
+        "label": "Email",
+        "value": "info{'@'}gttnano.com\nsales{'@'}gttnano.com"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "+1 (555) 123-4567"
+      },
+      "address": {
+        "label": "Address",
+        "value": "3 TAI SENG AVENUE,\n#04-36, TAI SENG\nEXCHANGE,\nSingapore 536465"
+      }
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "fullName": "Full Name *",
+      "email": "Email Address *",
+      "company": "Company",
+      "phone": "Phone Number",
+      "subject": "Subject *",
+      "message": "Message *",
+      "submit": "Send Message",
+      "placeholders": {
+        "fullName": "John Doe",
+        "email": "john{'@'}company.com",
+        "company": "Your Company",
+        "phone": "+1 (555) 123-4567",
+        "message": "Tell us how we can help you..."
+      }
+    }
   },
   "contact": {
     "title": "Contact GTTNano",

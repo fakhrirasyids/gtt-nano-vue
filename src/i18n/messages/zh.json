@@ -5,7 +5,7 @@
     "zh": "中文"
   },
   "languageSwitcher": {
-    "shortEn": "EN",
+    "shortEn": "English",
     "shortId": "ID",
     "shortZh": "中文"
   },
@@ -232,6 +232,73 @@
     "cardTitle": "准备好现场查看平台了吗？",
     "cardBody": "与GTTNano探讨产品就绪情况、临床定位和商业部署。",
     "button": "申请现场演示"
+  },
+  "aboutPage": {
+    "kicker": "关于 GTT Nano",
+    "title": "革新癌症检测与治疗",
+    "subtitle": "GTT Nano 正在开创面向精准肿瘤学的下一代纳米技术解决方案，连接早期检测与靶向治疗。",
+    "mission": {
+      "title": "我们的使命",
+      "body": "通过提供精准诊断与治疗工具来转变癌症护理，实现更早检测、更准确治疗和更好的患者结果。我们致力于通过创新纳米技术解决肿瘤学中最关键的挑战。"
+    },
+    "vision": {
+      "title": "我们的愿景",
+      "body": "让癌症能够在最早阶段被发现，并以前所未有的精度进行治疗，在最大化治疗效果的同时尽量减少对健康组织的伤害。我们期待我们的技术成为肿瘤护理的标准。"
+    },
+    "technology": {
+      "title": "我们的技术",
+      "items": {
+        "precision": {
+          "title": "纳米级精准",
+          "body": "我们的专有纳米颗粒能够以前所未有的准确度靶向癌细胞，在细胞层面同时支持成像和治疗。"
+        },
+        "detection": {
+          "title": "早期检测",
+          "body": "在治疗最有效的早期阶段发现癌症，从而显著提高患者生存率。"
+        },
+        "therapy": {
+          "title": "靶向治疗",
+          "body": "将治疗药物直接递送至肿瘤细胞，减少副作用并最大化治疗效果。"
+        }
+      }
+    }
+  },
+  "contactPage": {
+    "kicker": "联系我们",
+    "title": "让我们探讨如何为您提供帮助",
+    "subtitle": "无论您对演示、合作机会感兴趣，还是对我们的技术有疑问，我们都期待收到您的消息。",
+    "info": {
+      "title": "联系\n信息",
+      "email": {
+        "label": "电子邮件",
+        "value": "info{'@'}gttnano.com\nsales{'@'}gttnano.com"
+      },
+      "phone": {
+        "label": "电话",
+        "value": "+1 (555) 123-4567"
+      },
+      "address": {
+        "label": "地址",
+        "value": "3 TAI SENG AVENUE,\n#04-36, TAI SENG\nEXCHANGE,\nSingapore 536465"
+      }
+    },
+    "form": {
+      "title": "发送消息",
+      "fullName": "姓名 *",
+      "email": "电子邮箱 *",
+      "company": "公司",
+      "phone": "电话号码",
+      "subject": "主题 *",
+      "message": "消息 *",
+      "submit": "发送消息",
+      "placeholders": {
+        "fullName": "John Doe",
+        "email": "john{'@'}company.com",
+        "company": "您的公司",
+        "phone": "+1 (555) 123-4567",
+        "message": "请告诉我们可以如何帮助您..."
+      }
+    }
   },
   "contact": {
     "title": "联系GTTNano",

@@ -100,7 +100,7 @@ const current = computed(() => (locale.value || 'en') as SupportedLocale)
 const currentLabel = computed(() => {
   if (current.value === 'id') return t('languageSwitcher.shortId') || 'ID'
   if (current.value === 'zh') return t('languageSwitcher.shortZh') || '中文'
-  return t('languageSwitcher.shortEn') || 'EN'
+  return t('languageSwitcher.shortEn') || 'English'
 })
 
 const buttonThemeClass = computed(() =>

@@ -5,7 +5,7 @@
     "zh": "中文"
   },
   "languageSwitcher": {
-    "shortEn": "EN",
+    "shortEn": "English",
     "shortId": "ID",
     "shortZh": "中文"
   },
@@ -232,6 +232,73 @@
     "cardTitle": "Siap melihat platform secara langsung?",
     "cardBody": "Bicaralah dengan GTTNano tentang kesiapan produk, positioning klinis, dan penerapan komersial.",
     "button": "Minta Demo Langsung"
+  },
+  "aboutPage": {
+    "kicker": "Tentang GTT Nano",
+    "title": "Merevolusi Deteksi dan Pengobatan Kanker",
+    "subtitle": "GTT Nano memelopori solusi nanoteknologi generasi berikutnya untuk onkologi presisi, menjembatani deteksi dini dan terapi tertarget.",
+    "mission": {
+      "title": "Misi Kami",
+      "body": "Mentransformasi perawatan kanker dengan menghadirkan alat diagnostik dan terapeutik presisi yang memungkinkan deteksi lebih dini, pengobatan lebih akurat, dan hasil pasien yang lebih baik. Kami berkomitmen memecahkan tantangan paling kritis dalam onkologi melalui nanoteknologi inovatif."
+    },
+    "vision": {
+      "title": "Visi Kami",
+      "body": "Masa depan ketika kanker terdeteksi pada tahap paling awal dan ditangani dengan presisi yang belum pernah ada sebelumnya, meminimalkan kerusakan pada jaringan sehat sekaligus memaksimalkan efektivitas terapi. Kami membayangkan teknologi kami menjadi standar perawatan dalam onkologi."
+    },
+    "technology": {
+      "title": "Teknologi Kami",
+      "items": {
+        "precision": {
+          "title": "Presisi Skala Nano",
+          "body": "Nanopartikel proprietari kami menargetkan sel kanker dengan akurasi luar biasa, memungkinkan pencitraan dan terapi pada tingkat seluler."
+        },
+        "detection": {
+          "title": "Deteksi Dini",
+          "body": "Mendeteksi kanker pada tahap paling awal ketika pengobatan paling efektif, sehingga secara dramatis meningkatkan tingkat kelangsungan hidup pasien."
+        },
+        "therapy": {
+          "title": "Terapi Tertarget",
+          "body": "Mengantarkan agen terapeutik langsung ke sel tumor, meminimalkan efek samping dan memaksimalkan efektivitas pengobatan."
+        }
+      }
+    }
+  },
+  "contactPage": {
+    "kicker": "Hubungi Kami",
+    "title": "Mari Diskusikan Bagaimana Kami Dapat Membantu",
+    "subtitle": "Baik Anda tertarik pada demo, peluang kemitraan, atau memiliki pertanyaan tentang teknologi kami, kami senang mendengar dari Anda.",
+    "info": {
+      "title": "Informasi\nKontak",
+      "email": {
+        "label": "Email",
+        "value": "info{'@'}gttnano.com\nsales{'@'}gttnano.com"
+      },
+      "phone": {
+        "label": "Telepon",
+        "value": "+1 (555) 123-4567"
+      },
+      "address": {
+        "label": "Alamat",
+        "value": "3 TAI SENG AVENUE,\n#04-36, TAI SENG\nEXCHANGE,\nSingapura 536465"
+      }
+    },
+    "form": {
+      "title": "Kirim Pesan kepada Kami",
+      "fullName": "Nama Lengkap *",
+      "email": "Alamat Email *",
+      "company": "Perusahaan",
+      "phone": "Nomor Telepon",
+      "subject": "Subjek *",
+      "message": "Pesan *",
+      "submit": "Kirim Pesan",
+      "placeholders": {
+        "fullName": "John Doe",
+        "email": "john{'@'}company.com",
+        "company": "Perusahaan Anda",
+        "phone": "+1 (555) 123-4567",
+        "message": "Ceritakan bagaimana kami dapat membantu Anda..."
+      }
+    }
   },
   "contact": {
     "title": "Hubungi GTTNano",

@@ -25,7 +25,7 @@
               :class="currentPage === 'home' ? 'text-[#009689]' : 'text-white hover:text-white/80'"
               @click="emit('navigate', 'home')"
             >
-              Home
+              {{ t('nav.home') }}
             </button>
 
             <button
@@ -33,7 +33,7 @@
               :class="currentPage === 'about' ? 'text-[#009689]' : 'text-white hover:text-white/80'"
               @click="emit('navigate', 'about')"
             >
-              About Company
+              {{ t('nav.aboutCompany') }}
             </button>
 
             <!-- Product Pipeline dropdown -->
@@ -43,7 +43,7 @@
                 :class="isPipelinePage ? 'text-[#009689]' : 'text-white hover:text-white/80'"
                 @click="togglePipeline"
               >
-                Product Pipeline
+                {{ t('nav.productPipeline') }}
                 <svg
                   class="h-4 w-4 transition-transform duration-200"
                   :class="pipelineOpen ? 'rotate-180' : ''"
@@ -60,7 +60,7 @@
                   class="fixed left-1/2 top-[76px] w-[980px] max-w-[calc(100vw-2rem)] -translate-x-1/2 overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_24px_70px_rgba(0,0,0,0.2)]"
                 >
                   <div class="border-b border-black/10 px-8 py-5">
-                    <p class="font-['Volkhov'] text-[23px] font-bold leading-none text-[#101828]">Products Pipeline</p>
+                    <p class="font-['Volkhov'] text-[23px] font-bold leading-none text-[#101828]">{{ t('header.dropdownTitle') }}</p>
                   </div>
 
                   <div class="grid grid-cols-4 gap-7 px-8 pb-8 pt-6">
@@ -98,7 +98,7 @@
               :class="currentPage === 'contact' ? 'text-[#009689]' : 'text-white hover:text-white/80'"
               @click="emit('navigate', 'contact')"
             >
-              Contact Us
+              {{ t('nav.contactUs') }}
             </button>
           </div>
 
@@ -110,7 +110,7 @@
 
             <button
               class="lg:hidden p-2 text-white"
-              aria-label="Open navigation"
+              :aria-label="t('nav.openNav')"
               @click="drawerOpen = true"
             >
               <MenuIcon :size="24" />
@@ -132,6 +132,7 @@
 
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { Menu as MenuIcon } from 'lucide-vue-next'
 import LanguageDropdown from '@/components/LanguageDropdown.vue'
 import MobileDrawerGtt from '@/components/MobileDrawerGtt.vue'
@@ -152,6 +153,8 @@ const emit = defineEmits<{
   (e: 'navigate', page: PageName): void
 }>()
 
+const { t } = useI18n({ useScope: 'global' })
+
 const scrolled = ref(false)
 const drawerOpen = ref(false)
 const pipelineOpen = ref(false)
@@ -161,13 +164,13 @@ const isPipelinePage = computed(() =>
   ['gttn-dx', 'gttn-navi', 'gttn-tx'].includes(props.currentPage)
 )
 
-const pipelineItems = [
+const pipelineItems = computed(() => [
   {
     page: 'gttn-dx' as PageName,
-    title: 'GTTN-Dx GTTN-SCI',
+    title: 'GTTN-Dx / GTTN-SCI',
     desc: [
-      { text: 'For Cancer Early Screening and Research Use. Products have already received cFDA registration approval and are now ' },
-      { text: 'commercially available.', bold: true },
+      { text: t('software.cards.dx.plain') },
+      { text: t('software.cards.dx.bold'), bold: true },
     ],
     image: heroSlide02,
     imageClass: 'object-left',
@@ -176,8 +179,8 @@ const pipelineItems = [
     page: 'gttn-navi' as PageName,
     title: 'GTTN-Navi',
     desc: [
-      { text: 'For Cancer Early Screening and Research Use. Products have already received cFDA registration approval and are now ' },
-      { text: 'commercially available.', bold: true },
+      { text: t('software.cards.navi.plain') },
+      { text: t('software.cards.navi.bold'), bold: true },
     ],
     image: heroSlide03,
   },
@@ -185,21 +188,21 @@ const pipelineItems = [
     page: 'gttn-tx' as PageName,
     title: 'GTTN-Tx',
     desc: [
-      { text: 'It has obtained classification as a drug-device combination and is now under innovative device review, with projected ' },
-      { text: 'approval by 2029.', bold: true },
+      { text: t('software.cards.tx.plain') },
+      { text: t('software.cards.tx.bold'), bold: true },
     ],
     image: heroSlide04,
   },
   {
     page: 'home' as PageName,
-    title: 'Next in Line',
+    title: t('software.cards.next.title'),
     desc: [
-      { text: 'lymphatic tumor navigation, CT/MRI contrast agents, and radiopharmaceutical carriers, several entering ' },
-      { text: 'regulatory submission soon.', bold: true },
+      { text: t('software.cards.next.plain') },
+      { text: t('software.cards.next.bold'), bold: true },
     ],
     image: imgNext,
   },
-]
+])
 
 function togglePipeline() {
   pipelineOpen.value = !pipelineOpen.value

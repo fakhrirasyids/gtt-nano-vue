@@ -16,10 +16,15 @@
     "contactSales": "联系销售"
   },
   "nav": {
+    "home": "首页",
     "about": "关于",
+    "aboutCompany": "关于公司",
     "technology": "技术",
     "pipeline": "产品管线",
+    "productPipeline": "产品管线",
+    "productsPipeline": "产品管线",
     "contact": "联系我们",
+    "contactUs": "联系我们",
     "openNav": "打开导航",
     "closeMenu": "关闭导航"
   },
@@ -31,7 +36,29 @@
     "secondaryCta": "探索平台",
     "cardTitle": "面向未来的创新",
     "cardBody": "模块化平台，涵盖早期筛查、手术导航和下一代治疗药物递送。",
-    "imageAlt": "GTTNano精准靶向可视化"
+    "imageAlt": "GTTNano精准靶向可视化",
+    "slides": {
+      "future": {
+        "title": "早期癌症检测的未来",
+        "subtitle": "全球首个AI原生纳米精准平台，旨在彻底改变我们检测和治疗癌症的方式。",
+        "cta": "联系预约演示"
+      },
+      "dxSci": {
+        "title": "GTTN-Dx / GTTN-SCI",
+        "subtitle": "早期检测与研究级诊断平台，现已商业化上市。",
+        "cta": "查看详情"
+      },
+      "navi": {
+        "title": "GTTN-Navi",
+        "subtitle": "精准术中导航系统，实现肿瘤实时可视化。",
+        "cta": "查看详情"
+      },
+      "tx": {
+        "title": "GTTN-TX",
+        "subtitle": "面向精准肿瘤治疗的靶向药物递送系统。",
+        "cta": "查看详情"
+      }
+    }
   },
   "problem": {
     "kicker": "问题所在",
@@ -69,12 +96,15 @@
         "title": "高效低毒递送",
         "desc": "更多有效载荷到达恶性组织，同时将全身暴露降至最低。"
       }
-    }
+    },
+    "floatingLabel": "面向未来的创新"
   },
   "hardware": {
     "kicker": "工作原理",
     "title": "CMPT：全新靶向范式",
     "subtitle": "下一代靶向机制",
+    "cmptHeading": "精准靶向\n肿瘤细胞核",
+    "cmptBody": "选择性穿透肿瘤细胞并在细胞核中以无与伦比的精度积聚。",
     "table": {
       "headers": {
         "feature": "特征",
@@ -336,5 +366,73 @@
       "terms": "服务条款",
       "legal": "法律"
     }
+  },
+  "gttnDx": {
+    "heroSubtitle": "早期检测与研究级诊断平台，现已商业化上市。",
+    "contactDemo": "联系预约演示",
+    "screeningKicker": "GTTN-DX：早期癌症筛查",
+    "screeningTitle": "症状出现前筛查",
+    "screeningDesc": "针对多种肿瘤类型的广谱癌症风险检测，经济实惠，操作简便，成本和复杂度最低——适用于发达和发展中市场。依托GTTN高精度核靶向技术，该检测能清晰区分癌变与非癌变细胞，以最低成本和复杂度实现多种肿瘤类型的早期准确筛查。",
+    "certKicker": "认证",
+    "certTitle": "已获CFDA注册批准",
+    "certDesc": "我们的产品已获得cFDA注册批准，证明符合安全、质量和临床适用性的严格监管标准。",
+    "certBody": "获得cFDA注册批准后，这些产品已进入商业部署，支持临床筛查流程和转化研究。其双重用途弥合了实验室发现与真实临床应用之间的差距，加速了肿瘤诊断学的创新。",
+    "valueKicker": "价值主张",
+    "valueTitle": "经济实惠、准确可靠、\n触手可及",
+    "valueDesc": "基于精准纳米技术构建，这些系统增强了分子靶向和信号放大能力，与传统诊断方法相比灵敏度更高。",
+    "valuePoints": [
+      "高灵敏度分子检测",
+      "与标准临床影像流程兼容",
+      "已通过cFDA注册，商业化可用"
+    ]
+  },
+  "gttnNavi": {
+    "heroSubtitle": "精准术中导航系统，实现肿瘤实时可视化。",
+    "contactDemo": "联系预约演示",
+    "mapsKicker": "GTTN-NAVI：赋能病理学家和外科医生",
+    "mapsTitle": "映射每个病灶\n引导每一步操作",
+    "mapsDesc": "从隐匿肿瘤到手术目标，GTTNano创建个性化肿瘤图谱辅助精准决策。GTTN染色精确标记肿瘤细胞核，让医生清晰看到肿瘤边界和转移灶——引导外科医生和肿瘤科医生以无与伦比的精度靶向癌症。",
+    "digitalKicker": "GTTN-NAVI：赋能病理学家和外科医生",
+    "digitalTitle": "数字病理学",
+    "digitalDesc": "GTTN-GM是一种新型GTTN衍生物，具有强荧光和可见着色双重特性，非常适合术中视觉引导。外科医生现在可以在手术中直观定位并精准切除转移性淋巴结——无需完全依赖成像设备。",
+    "endoscopyKicker": "GTTN-NAVI：赋能智能内窥镜",
+    "endoscopyTitle": "从图像到洞察，\n即时呈现。",
+    "endoscopyDesc": "GTTN原位作为内窥镜中的发光标记物，实时突出显示潜在肿瘤位点。结合AI驱动分析，使医生能快速识别可疑病灶并引导实时干预——确保在源头进行精准及时的治疗。",
+    "videoLabels": ["肿瘤", "切除后"],
+    "certKicker": "认证",
+    "certTitle": "已获CFDA注册批准",
+    "certDesc": "我们的产品已获得cFDA注册批准，证明符合安全、质量和临床适用性的严格监管标准。",
+    "certBody": "获得cFDA注册批准后，这些产品已进入商业部署，支持临床筛查流程和转化研究。其双重用途弥合了实验室发现与真实临床应用之间的差距，加速了肿瘤诊断学的创新。",
+    "valueKicker": "价值主张",
+    "valueTitle": "确定切缘，检测转移，实现精准。",
+    "valueDesc": "GTTN-Navi是下一代手术导航设备，在手术过程中提供肿瘤边界实时可视化，使外科医生能以更高精度识别恶性组织。",
+    "valuePoints": [
+      "实时肿瘤边界可视化",
+      "高空间精度手术引导",
+      "III类医疗器械，正接受突破性器械审查"
+    ]
+  },
+  "gttnTx": {
+    "heroSubtitle": "面向精准肿瘤治疗的靶向药物递送系统。",
+    "contactDemo": "联系预约演示",
+    "devBadge": "研发中",
+    "devTitle": "精准治疗，2029年到来。",
+    "devDesc": "GTTN-Tx已获药械组合分类，现正接受创新器械审查。预计2029年获批，代表靶向肿瘤治疗的下一个前沿——将治疗有效载荷以前所未有的精度直接递送至肿瘤细胞核。",
+    "stats": [
+      { "value": "> 50%", "label": "核靶向效率" },
+      { "value": "2029", "label": "预计获批年份" },
+      { "value": "III类", "label": "药械组合" }
+    ],
+    "milestonesTitle": "关键开发里程碑",
+    "milestones": [
+      { "label": "已获药械组合分类", "desc": "成功纳入创新器械审批路径" },
+      { "label": "临床前研究完成", "desc": "在动物模型中证实了有效性和安全性" },
+      { "label": "I期临床试验", "desc": "计划在监管审查后启动" },
+      { "label": "监管申报", "desc": "目标于2027年前提交" },
+      { "label": "商业批准", "desc": "预计于2029年" }
+    ]
+  },
+  "header": {
+    "dropdownTitle": "产品管线"
   }
 }

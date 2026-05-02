@@ -28,11 +28,11 @@
 
         <Reveal :delay="100">
           <div>
-            <h3 class="font-['Volkhov'] font-bold text-white text-[24px] sm:text-[30px] lg:text-[34px] leading-[1.2] mb-5">
-              Precisely targeting<br />cancer cell nucleus
+            <h3 class="font-['Volkhov'] font-bold text-white text-[24px] sm:text-[30px] lg:text-[34px] leading-[1.2] mb-5 whitespace-pre-line">
+              {{ t('hardware.cmptHeading') }}
             </h3>
             <p class="font-sans text-white/60 text-base sm:text-lg leading-relaxed">
-              Allowing it to penetrate tumor cells selectively and accumulate in the nucleus with unmatched precision.
+              {{ t('hardware.cmptBody') }}
             </p>
           </div>
         </Reveal>

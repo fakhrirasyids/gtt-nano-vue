@@ -40,7 +40,7 @@
         <div class="max-w-[1280px] mx-auto w-full px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
           <Transition name="hero-copy" mode="out-in">
             <div
-              :key="activeSlide.key"
+              :key="`${activeSlide.key}-${locale}`"
               class="max-w-[680px] pt-24 sm:pt-28 lg:pt-32 pb-24 sm:pb-28 lg:pb-32 text-white"
             >
               <h1
@@ -89,6 +89,7 @@
 
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import type { PageName } from '@/App.vue'
 
 import heroSlide01 from '@/assets/gtt/12b1ceaf647f00d1aa5ee32ec916614e30e3aa5f.png'
@@ -111,62 +112,64 @@ const emit = defineEmits<{
   (e: 'navigate', page: PageName): void
 }>()
 
+const { t, locale } = useI18n({ useScope: 'global' })
+
 const activeIndex = ref(0)
 const autoplayMs = 5000
 let autoplayTimer: number | null = null
 const touchStartX = ref(0)
 
-const slides: SlideItem[] = [
+const slides = computed<SlideItem[]>(() => [
   {
     key: 'future',
-    title: 'The Future of Early Cancer Detection',
-    subtitle: "World's first AI-native, nano-precision platform designed to revolutionize how we detect and treat cancer.",
-    cta: 'Contact for Demo',
+    title: t('hero.slides.future.title'),
+    subtitle: t('hero.slides.future.subtitle'),
+    cta: t('hero.slides.future.cta'),
     page: 'contact',
-    alt: 'The Future of Early Cancer Detection',
+    alt: t('hero.slides.future.title'),
     image: heroSlide01,
     objectPosition: 'center center',
   },
   {
     key: 'dxSci',
-    title: 'GTTN-Dx / GTTN-SCI',
-    subtitle: 'Early detection and research-grade diagnostics platform, now commercially available.',
-    cta: 'View Detail',
+    title: t('hero.slides.dxSci.title'),
+    subtitle: t('hero.slides.dxSci.subtitle'),
+    cta: t('hero.slides.dxSci.cta'),
     page: 'gttn-dx',
-    alt: 'GTTN-Dx / GTTN-SCI',
+    alt: t('hero.slides.dxSci.title'),
     image: heroSlide02,
     objectPosition: '72% center',
   },
   {
     key: 'navi',
-    title: 'GTTN-Navi',
-    subtitle: 'Precision intraoperative navigation system for real-time tumor visualization.',
-    cta: 'View Detail',
+    title: t('hero.slides.navi.title'),
+    subtitle: t('hero.slides.navi.subtitle'),
+    cta: t('hero.slides.navi.cta'),
     page: 'gttn-navi',
-    alt: 'GTTN-Navi',
+    alt: t('hero.slides.navi.title'),
     image: heroSlide03,
     objectPosition: '70% center',
   },
   {
     key: 'tx',
-    title: 'GTTN-TX',
-    subtitle: 'Targeted therapy delivery system for precision oncology treatment.',
-    cta: 'View Detail',
+    title: t('hero.slides.tx.title'),
+    subtitle: t('hero.slides.tx.subtitle'),
+    cta: t('hero.slides.tx.cta'),
     page: 'gttn-tx',
-    alt: 'GTTN-TX',
+    alt: t('hero.slides.tx.title'),
     image: heroSlide04,
     objectPosition: '72% center',
   },
-]
+])
 
-const activeSlide = computed(() => slides[activeIndex.value])
+const activeSlide = computed(() => slides.value[activeIndex.value])
 
 function nextSlide() {
-  activeIndex.value = (activeIndex.value + 1) % slides.length
+  activeIndex.value = (activeIndex.value + 1) % slides.value.length
 }
 
 function prevSlide() {
-  activeIndex.value = (activeIndex.value - 1 + slides.length) % slides.length
+  activeIndex.value = (activeIndex.value - 1 + slides.value.length) % slides.value.length
 }
 
 function goToSlide(index: number) {

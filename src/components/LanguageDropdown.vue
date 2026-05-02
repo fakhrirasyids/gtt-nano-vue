@@ -59,7 +59,7 @@
 import { computed, onBeforeUnmount, onMounted, ref, useAttrs } from 'vue'
 import { useI18n } from 'vue-i18n'
 import type { SupportedLocale } from '@/i18n'
-import { setLocaleRef } from '@/i18n'
+import { setLocale } from '@/i18n'
 
 const props = withDefaults(
   defineProps<{
@@ -131,7 +131,7 @@ function switchTo(next: SupportedLocale) {
     return
   }
 
-  setLocaleRef(locale as any, next)
+  setLocale(next)
   open.value = false
 }
 

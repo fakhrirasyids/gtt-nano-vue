@@ -10,10 +10,10 @@
             GTTN-Dx /<br />GTTN-SCI
           </h1>
           <p class="mt-3 text-white/80 font-sans text-base sm:text-lg leading-relaxed">
-            Early detection and research-grade diagnostics platform, now commercially available.
+            {{ t('gttnDx.heroSubtitle') }}
           </p>
           <button class="mt-6 inline-flex items-center justify-center rounded-[6px] bg-white px-6 py-3 font-semibold text-[#101828] text-sm sm:text-base hover:-translate-y-0.5 transition-transform">
-            Contact for Demo
+            {{ t('gttnDx.contactDemo') }}
           </button>
         </div>
       </div>
@@ -25,12 +25,12 @@
     <div class="max-w-[1280px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         <div>
-          <p class="font-sans font-semibold text-[#009689] text-sm uppercase tracking-[0.1em] mb-3">GTTN-DX: EARLY CANCER SCREENING</p>
+          <p class="font-sans font-semibold text-[#009689] text-sm uppercase tracking-[0.1em] mb-3">{{ t('gttnDx.screeningKicker') }}</p>
           <h2 class="font-['Volkhov'] font-bold text-[#101828] text-2xl sm:text-3xl lg:text-4xl mb-5">
-            Screen before Symptoms
+            {{ t('gttnDx.screeningTitle') }}
           </h2>
           <p class="font-sans text-[#344054] text-sm sm:text-base leading-relaxed">
-            An affordable, easy-to-use solution for broad-spectrum cancer risk detection—designed for both developed and developing markets. Powered by GTTN's high-precision nuclear targeting, this test offers clear differentiation between cancerous and non-cancerous cells, enabling early, accurate screening across multiple tumor types with minimal cost and complexity.
+            {{ t('gttnDx.screeningDesc') }}
           </p>
         </div>
         <div class="rounded-2xl overflow-hidden border border-black/8 bg-white p-3 shadow-[0_16px_48px_rgba(15,23,42,0.08)]">
@@ -44,13 +44,13 @@
   <section class="py-14 sm:py-16 lg:py-20 bg-[#0d1b2a]">
     <div class="max-w-[1280px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-20 text-center">
       <div class="inline-block rounded-full border border-white/25 px-5 py-1.5 text-white/80 text-xs font-semibold uppercase tracking-widest mb-8">
-        CERTIFICATION
+        {{ t('gttnDx.certKicker') }}
       </div>
       <h2 class="font-['Volkhov'] font-bold text-white text-2xl sm:text-3xl lg:text-4xl mb-4">
-        CFDA Registration Approval Secured
+        {{ t('gttnDx.certTitle') }}
       </h2>
       <p class="font-sans text-white/65 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed mb-12">
-        Our products have already received cFDA registration approval, demonstrating compliance with stringent regulatory standards for safety, quality, and clinical applicability.
+        {{ t('gttnDx.certDesc') }}
       </p>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center text-left">
@@ -61,7 +61,7 @@
         </div>
         <div>
           <p class="font-sans text-white/65 text-sm sm:text-base leading-relaxed">
-            With cFDA registration approval secured, these products have entered commercial deployment, supporting both clinical screening workflows and translational research. Their dual-use capability bridges the gap between laboratory discovery and real-world clinical application, accelerating innovation in oncology diagnostics.
+            {{ t('gttnDx.certBody') }}
           </p>
         </div>
       </div>
@@ -73,18 +73,18 @@
     <div class="max-w-[1280px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         <div>
-          <p class="font-sans font-semibold text-[#009689] text-sm uppercase tracking-[0.1em] mb-3">VALUE PROPOSITION</p>
-          <h2 class="font-['Volkhov'] font-bold text-[#101828] text-2xl sm:text-3xl lg:text-4xl mb-5">
-            Affordable, Accurate,<br />and Accessible
+          <p class="font-sans font-semibold text-[#009689] text-sm uppercase tracking-[0.1em] mb-3">{{ t('gttnDx.valueKicker') }}</p>
+          <h2 class="font-['Volkhov'] font-bold text-[#101828] text-2xl sm:text-3xl lg:text-4xl mb-5 whitespace-pre-line">
+            {{ t('gttnDx.valueTitle') }}
           </h2>
           <p class="font-sans text-[#344054] text-sm sm:text-base leading-relaxed mb-8">
-            Built on precision nanotechnology, these systems enhance molecular targeting and signal amplification, enabling higher sensitivity compared to conventional diagnostic methods.
+            {{ t('gttnDx.valueDesc') }}
           </p>
 
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div
-              v-for="point in valuePoints"
-              :key="point.text"
+              v-for="(point, index) in valuePoints"
+              :key="index"
               class="flex flex-col items-center text-center p-4 rounded-2xl bg-[#f0f8ff] gap-3"
             >
               <div class="h-10 w-10 rounded-full bg-[#009689]/15 flex items-center justify-center">
@@ -105,15 +105,19 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { Eye, Microscope, ShieldCheck } from 'lucide-vue-next'
 import heroImg from '@/assets/gtt/c0ab7a1d4dda2bd0ad42477b59706868447935b6.png'
 import imgScreening from '@/assets/gtt/84858028971f5af6032d388f32bd93bafb2bf1ce.png'
 import imgCert from '@/assets/gtt/592af24b3ae7436288551302e2953e30443d299e.png'
 import imgCells from '@/assets/gtt/9c9ace973e69ea70ca9c9ac8c5ee50d97b45ef8b.png'
 
-const valuePoints = [
-  { icon: Eye, text: 'High-sensitivity molecular detection' },
-  { icon: Microscope, text: 'Compatible with standard clinical imaging workflows' },
-  { icon: ShieldCheck, text: 'cFDA registered and commercially available' },
-]
+const { t, tm } = useI18n({ useScope: 'global' })
+
+const valuePoints = computed(() => {
+  const points = tm('gttnDx.valuePoints') as string[]
+  const icons = [Eye, Microscope, ShieldCheck]
+  return points.map((text, i) => ({ text, icon: icons[i] }))
+})
 </script>

@@ -41,7 +41,7 @@
               </div>
               <div>
                 <p class="font-sans font-bold text-[#101828] text-sm leading-tight">GTTNano</p>
-                <p class="font-sans text-[#6b7280] text-[10px] uppercase tracking-[0.1em] mt-0.5">Future-Forward Innovation</p>
+                <p class="font-sans text-[#6b7280] text-[10px] uppercase tracking-[0.1em] mt-0.5">{{ t('showcase.floatingLabel') }}</p>
               </div>
             </div>
           </div>

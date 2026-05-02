@@ -18,7 +18,7 @@
             <button @click="navigate('home')">
               <img :src="logo" alt="GTTNano" class="h-9 w-auto" />
             </button>
-            <button class="p-2 text-white" @click="close" aria-label="Close navigation">
+            <button class="p-2 text-white" @click="close" :aria-label="t('nav.closeMenu')">
               <XIcon :size="22" />
             </button>
           </div>
@@ -28,13 +28,13 @@
               class="text-left py-3 text-[15px] font-medium transition-colors"
               :class="currentPage === 'home' ? 'text-[#009689]' : 'text-white/90 hover:text-white'"
               @click="navigate('home')"
-            >Home</button>
+            >{{ t('nav.home') }}</button>
 
             <button
               class="text-left py-3 text-[15px] font-medium transition-colors"
               :class="currentPage === 'about' ? 'text-[#009689]' : 'text-white/90 hover:text-white'"
               @click="navigate('about')"
-            >About Company</button>
+            >{{ t('nav.aboutCompany') }}</button>
 
             <div>
               <button
@@ -42,7 +42,7 @@
                 :class="isPipelinePage ? 'text-[#009689]' : 'text-white/90 hover:text-white'"
                 @click="pipelineOpen = !pipelineOpen"
               >
-                Product Pipeline
+                {{ t('nav.productPipeline') }}
                 <svg
                   class="h-4 w-4 transition-transform duration-200"
                   :class="pipelineOpen ? 'rotate-180' : ''"
@@ -56,17 +56,17 @@
                   class="text-left py-2 text-[14px] transition-colors"
                   :class="currentPage === 'gttn-dx' ? 'text-[#009689]' : 'text-white/70 hover:text-white'"
                   @click="navigate('gttn-dx')"
-                >GTTN-Dx / GTTN-SCI</button>
+                >{{ t('contact.footer.links.dx') }}</button>
                 <button
                   class="text-left py-2 text-[14px] transition-colors"
                   :class="currentPage === 'gttn-navi' ? 'text-[#009689]' : 'text-white/70 hover:text-white'"
                   @click="navigate('gttn-navi')"
-                >GTTN-Navi</button>
+                >{{ t('contact.footer.links.navi') }}</button>
                 <button
                   class="text-left py-2 text-[14px] transition-colors"
                   :class="currentPage === 'gttn-tx' ? 'text-[#009689]' : 'text-white/70 hover:text-white'"
                   @click="navigate('gttn-tx')"
-                >GTTN-Tx</button>
+                >{{ t('contact.footer.links.tx') }}</button>
               </div>
             </div>
 
@@ -74,7 +74,7 @@
               class="text-left py-3 text-[15px] font-medium transition-colors"
               :class="currentPage === 'contact' ? 'text-[#009689]' : 'text-white/90 hover:text-white'"
               @click="navigate('contact')"
-            >Contact Us</button>
+            >{{ t('nav.contactUs') }}</button>
 
             <div class="mt-4 border-t border-white/10 pt-4">
               <LanguageDropdown align="left" theme="dark" class="w-full" />
@@ -88,6 +88,7 @@
 
 <script setup lang="ts">
 import { computed, ref, watch, nextTick, onMounted, onBeforeUnmount } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { X as XIcon } from 'lucide-vue-next'
 import LanguageDropdown from '@/components/LanguageDropdown.vue'
 import type { PageName } from '@/App.vue'
@@ -102,6 +103,8 @@ const emit = defineEmits<{
   (e: 'update:modelValue', v: boolean): void
   (e: 'navigate', page: PageName): void
 }>()
+
+const { t } = useI18n({ useScope: 'global' })
 
 const isActive = ref(false)
 const pipelineOpen = ref(false)

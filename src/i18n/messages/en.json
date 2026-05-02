@@ -16,10 +16,15 @@
     "contactSales": "Contact Sales"
   },
   "nav": {
+    "home": "Home",
     "about": "About",
+    "aboutCompany": "About Company",
     "technology": "Technology",
     "pipeline": "Pipeline",
+    "productPipeline": "Product Pipeline",
+    "productsPipeline": "Products Pipeline",
     "contact": "Contact",
+    "contactUs": "Contact Us",
     "openNav": "Open navigation",
     "closeMenu": "Close navigation"
   },
@@ -31,7 +36,29 @@
     "secondaryCta": "Explore the Platform",
     "cardTitle": "Future-forward innovation",
     "cardBody": "A modular platform spanning early screening, surgical navigation, and next-generation therapeutic delivery.",
-    "imageAlt": "GTTNano precision targeting visualization"
+    "imageAlt": "GTTNano precision targeting visualization",
+    "slides": {
+      "future": {
+        "title": "The Future of Early Cancer Detection",
+        "subtitle": "World’s first AI-native, nano-precision platform designed to revolutionize how we detect and treat cancer.",
+        "cta": "Contact for Demo"
+      },
+      "dxSci": {
+        "title": "GTTN-Dx / GTTN-SCI",
+        "subtitle": "Early detection and research-grade diagnostics platform, now commercially available.",
+        "cta": "View Detail"
+      },
+      "navi": {
+        "title": "GTTN-Navi",
+        "subtitle": "Precision intraoperative navigation system for real-time tumor visualization.",
+        "cta": "View Detail"
+      },
+      "tx": {
+        "title": "GTTN-TX",
+        "subtitle": "Targeted therapy delivery system for precision oncology treatment.",
+        "cta": "View Detail"
+      }
+    }
   },
   "problem": {
     "kicker": "The Problem",
@@ -69,12 +96,15 @@
         "title": "High-efficiency, low-toxicity delivery",
         "desc": "More of the payload reaches malignant tissue while minimizing systemic exposure."
       }
-    }
+    },
+    "floatingLabel": "Future-Forward Innovation"
   },
   "hardware": {
     "kicker": "HOW IT WORKS",
     "title": "CMPT: A New Targeting Paradigm",
     "subtitle": "The Next-Gen Targeting Mechanism",
+    "cmptHeading": "Precisely targeting\ncancer cell nucleus",
+    "cmptBody": "Allowing it to penetrate tumor cells selectively and accumulate in the nucleus with unmatched precision.",
     "table": {
       "headers": {
         "feature": "Feature",
@@ -336,5 +366,73 @@
       "terms": "Terms of Service",
       "legal": "Legal"
     }
+  },
+  "gttnDx": {
+    "heroSubtitle": "Early detection and research-grade diagnostics platform, now commercially available.",
+    "contactDemo": "Contact for Demo",
+    "screeningKicker": "GTTN-DX: EARLY CANCER SCREENING",
+    "screeningTitle": "Screen before Symptoms",
+    "screeningDesc": "An affordable, easy-to-use solution for broad-spectrum cancer risk detection—designed for both developed and developing markets. Powered by GTTN's high-precision nuclear targeting, this test offers clear differentiation between cancerous and non-cancerous cells, enabling early, accurate screening across multiple tumor types with minimal cost and complexity.",
+    "certKicker": "CERTIFICATION",
+    "certTitle": "CFDA Registration Approval Secured",
+    "certDesc": "Our products have already received cFDA registration approval, demonstrating compliance with stringent regulatory standards for safety, quality, and clinical applicability.",
+    "certBody": "With cFDA registration approval secured, these products have entered commercial deployment, supporting both clinical screening workflows and translational research. Their dual-use capability bridges the gap between laboratory discovery and real-world clinical application, accelerating innovation in oncology diagnostics.",
+    "valueKicker": "VALUE PROPOSITION",
+    "valueTitle": "Affordable, Accurate,\nand Accessible",
+    "valueDesc": "Built on precision nanotechnology, these systems enhance molecular targeting and signal amplification, enabling higher sensitivity compared to conventional diagnostic methods.",
+    "valuePoints": [
+      "High-sensitivity molecular detection",
+      "Compatible with standard clinical imaging workflows",
+      "cFDA registered and commercially available"
+    ]
+  },
+  "gttnNavi": {
+    "heroSubtitle": "Precision intraoperative navigation system for real-time tumor visualization.",
+    "contactDemo": "Contact for Demo",
+    "mapsKicker": "GTTN-NAVI: EMPOWERING PATHOLOGISTS AND SURGEONS",
+    "mapsTitle": "Maps every lesion\nGuides every move",
+    "mapsDesc": "From hidden tumors to surgical targets, GTTNano creates personalized tumor maps for precision decision-making. GTTN staining precisely highlights the nuclei of tumor cells, allowing doctors to clearly see tumor boundaries and metastases—guiding surgeons and oncologists to target cancer with unmatched precision.",
+    "digitalKicker": "GTTN-NAVI: EMPOWERING PATHOLOGISTS AND SURGEONS",
+    "digitalTitle": "Digital Pathology",
+    "digitalDesc": "GTTN-GM is a novel GTTN derivative engineered with both strong fluorescence and visible coloration, making it ideal for intraoperative visual guidance. Surgeons can now visibly locate and precisely remove metastatic lymph nodes during procedures—without relying solely on imaging devices.",
+    "endoscopyKicker": "GTTN-NAVI: EMPOWERING SMART ENDOSCOPY",
+    "endoscopyTitle": "Image to Insight,\nInstantly.",
+    "endoscopyDesc": "GTTN in-situ acts as a luminous marker during endoscopy, highlighting potential tumor sites as they appear. Coupled with AI-driven analysis, it enables doctors to rapidly identify suspicious lesions and guide real-time interventions—ensuring precise and timely treatment at the source.",
+    "videoLabels": ["Tumor", "After Removal"],
+    "certKicker": "CERTIFICATION",
+    "certTitle": "CFDA Registration Approval Secured",
+    "certDesc": "Our products have already received cFDA registration approval, demonstrating compliance with stringent regulatory standards for safety, quality, and clinical applicability.",
+    "certBody": "With cFDA registration approval secured, these products have entered commercial deployment, supporting both clinical screening workflows and translational research. Their dual-use capability bridges the gap between laboratory discovery and real-world clinical application, accelerating innovation in oncology diagnostics.",
+    "valueKicker": "VALUE PROPOSITION",
+    "valueTitle": "Define the margins. Detect the spread. Deliver precision.",
+    "valueDesc": "GTTN-Navi is a next-generation surgical navigation device that provides real-time visualization of tumor boundaries during procedures, enables surgeons to identify malignant tissue with greater precision.",
+    "valuePoints": [
+      "Real-time tumor margin visualization",
+      "High spatial accuracy for surgical guidance",
+      "Class III medical device under Breakthrough Device review"
+    ]
+  },
+  "gttnTx": {
+    "heroSubtitle": "Targeted therapy delivery system for precision oncology treatment.",
+    "contactDemo": "Contact for Demo",
+    "devBadge": "IN DEVELOPMENT",
+    "devTitle": "Precision Therapy. Coming 2029.",
+    "devDesc": "GTTN-Tx has obtained classification as a drug-device combination and is now under innovative device review. With projected approval by 2029, it represents the next frontier in targeted oncology treatment—delivering therapeutic payloads directly to tumor cell nuclei with unprecedented precision.",
+    "stats": [
+      { "value": "> 50%", "label": "Nuclear targeting efficiency" },
+      { "value": "2029", "label": "Projected approval" },
+      { "value": "Class III", "label": "Drug-device combination" }
+    ],
+    "milestonesTitle": "Key Development Milestones",
+    "milestones": [
+      { "label": "Drug-device combination classification obtained", "desc": "Successfully classified under innovative device pathway" },
+      { "label": "Pre-clinical studies completed", "desc": "Demonstrated efficacy and safety in animal models" },
+      { "label": "Phase I clinical trials", "desc": "Scheduled to begin following regulatory review" },
+      { "label": "Regulatory submission", "desc": "Target submission ahead of 2027" },
+      { "label": "Commercial approval", "desc": "Projected by 2029" }
+    ]
+  },
+  "header": {
+    "dropdownTitle": "Products Pipeline"
   }
 }

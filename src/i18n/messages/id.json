@@ -16,10 +16,15 @@
     "contactSales": "Hubungi Sales"
   },
   "nav": {
+    "home": "Beranda",
     "about": "Tentang",
+    "aboutCompany": "Tentang Perusahaan",
     "technology": "Teknologi",
     "pipeline": "Pipeline Produk",
+    "productPipeline": "Pipeline Produk",
+    "productsPipeline": "Pipeline Produk",
     "contact": "Kontak",
+    "contactUs": "Hubungi Kami",
     "openNav": "Buka navigasi",
     "closeMenu": "Tutup navigasi"
   },
@@ -31,7 +36,29 @@
     "secondaryCta": "Jelajahi Platform",
     "cardTitle": "Inovasi berorientasi masa depan",
     "cardBody": "Platform modular yang mencakup skrining dini, navigasi bedah, dan pengiriman terapeutik generasi berikutnya.",
-    "imageAlt": "Visualisasi penargetan presisi GTTNano"
+    "imageAlt": "Visualisasi penargetan presisi GTTNano",
+    "slides": {
+      "future": {
+        "title": "Masa Depan Deteksi Kanker Dini",
+        "subtitle": "Platform nano-presisi berbasis AI pertama di dunia yang dirancang untuk merevolusi cara kita mendeteksi dan mengobati kanker.",
+        "cta": "Hubungi untuk Demo"
+      },
+      "dxSci": {
+        "title": "GTTN-Dx / GTTN-SCI",
+        "subtitle": "Platform diagnostik deteksi dini dan riset, kini tersedia secara komersial.",
+        "cta": "Lihat Detail"
+      },
+      "navi": {
+        "title": "GTTN-Navi",
+        "subtitle": "Sistem navigasi intraoperatif presisi untuk visualisasi tumor secara real-time.",
+        "cta": "Lihat Detail"
+      },
+      "tx": {
+        "title": "GTTN-TX",
+        "subtitle": "Sistem pengiriman terapi tertarget untuk pengobatan onkologi presisi.",
+        "cta": "Lihat Detail"
+      }
+    }
   },
   "problem": {
     "kicker": "Masalah",
@@ -69,12 +96,15 @@
         "title": "Pengiriman efisiensi tinggi, toksisitas rendah",
         "desc": "Lebih banyak muatan yang mencapai jaringan ganas sambil meminimalkan paparan sistemik."
       }
-    }
+    },
+    "floatingLabel": "Inovasi Berorientasi Masa Depan"
   },
   "hardware": {
     "kicker": "CARA KERJANYA",
     "title": "CMPT: Paradigma Penargetan Baru",
     "subtitle": "Mekanisme Penargetan Generasi Berikutnya",
+    "cmptHeading": "Menargetkan dengan presisi\ninti sel kanker",
+    "cmptBody": "Memungkinkan penetrasi sel tumor secara selektif dan akumulasi di inti dengan presisi tak tertandingi.",
     "table": {
       "headers": {
         "feature": "Fitur",
@@ -336,5 +366,73 @@
       "terms": "Ketentuan Layanan",
       "legal": "Hukum"
     }
+  },
+  "gttnDx": {
+    "heroSubtitle": "Platform diagnostik deteksi dini dan riset, kini tersedia secara komersial.",
+    "contactDemo": "Hubungi untuk Demo",
+    "screeningKicker": "GTTN-DX: SKRINING KANKER DINI",
+    "screeningTitle": "Skrining Sebelum Gejala",
+    "screeningDesc": "Solusi terjangkau dan mudah digunakan untuk deteksi risiko kanker spektrum luas—dirancang untuk pasar berkembang maupun maju. Didukung penargetan inti presisi tinggi GTTN, tes ini menawarkan diferensiasi yang jelas antara sel kanker dan non-kanker, memungkinkan skrining dini yang akurat di berbagai jenis tumor dengan biaya dan kompleksitas minimal.",
+    "certKicker": "SERTIFIKASI",
+    "certTitle": "Persetujuan Registrasi CFDA Diperoleh",
+    "certDesc": "Produk kami telah mendapatkan persetujuan registrasi cFDA, menunjukkan kepatuhan terhadap standar regulasi ketat untuk keamanan, kualitas, dan kelayakan klinis.",
+    "certBody": "Dengan persetujuan registrasi cFDA yang diperoleh, produk ini telah memasuki penerapan komersial, mendukung alur kerja skrining klinis dan riset translasional. Kemampuan ganda mereka menjembatani antara penemuan laboratorium dan aplikasi klinis nyata, mempercepat inovasi dalam diagnostik onkologi.",
+    "valueKicker": "PROPOSISI NILAI",
+    "valueTitle": "Terjangkau, Akurat,\ndan Dapat Diakses",
+    "valueDesc": "Dibangun di atas nanoteknologi presisi, sistem ini meningkatkan penargetan molekuler dan amplifikasi sinyal, memungkinkan sensitivitas lebih tinggi dibandingkan metode diagnostik konvensional.",
+    "valuePoints": [
+      "Deteksi molekuler sensitivitas tinggi",
+      "Kompatibel dengan alur kerja pencitraan klinis standar",
+      "Terdaftar cFDA dan tersedia secara komersial"
+    ]
+  },
+  "gttnNavi": {
+    "heroSubtitle": "Sistem navigasi intraoperatif presisi untuk visualisasi tumor secara real-time.",
+    "contactDemo": "Hubungi untuk Demo",
+    "mapsKicker": "GTTN-NAVI: MEMBERDAYAKAN PATOLOGIS DAN AHLI BEDAH",
+    "mapsTitle": "Memetakan setiap lesi\nMemandu setiap gerakan",
+    "mapsDesc": "Dari tumor tersembunyi hingga target bedah, GTTNano membuat peta tumor personal untuk pengambilan keputusan presisi. Pewarnaan GTTN secara tepat menyoroti inti sel tumor, memungkinkan dokter melihat batas tumor dan metastasis dengan jelas—memandu ahli bedah dan onkolog untuk menarget kanker dengan presisi tak tertandingi.",
+    "digitalKicker": "GTTN-NAVI: MEMBERDAYAKAN PATOLOGIS DAN AHLI BEDAH",
+    "digitalTitle": "Patologi Digital",
+    "digitalDesc": "GTTN-GM adalah turunan GTTN baru yang dirancang dengan fluoresen kuat dan pewarnaan visual, menjadikannya ideal untuk panduan visual intraoperatif. Ahli bedah kini dapat secara visual menemukan dan mengangkat kelenjar getah bening metastasis selama prosedur—tanpa hanya mengandalkan perangkat pencitraan.",
+    "endoscopyKicker": "GTTN-NAVI: MEMBERDAYAKAN ENDOSKOPI CERDAS",
+    "endoscopyTitle": "Dari Citra ke Wawasan,\nSeketika.",
+    "endoscopyDesc": "GTTN in-situ bertindak sebagai penanda luminous selama endoskopi, menyoroti potensi lokasi tumor saat muncul. Dipadu analisis berbasis AI, memungkinkan dokter mengidentifikasi lesi mencurigakan dengan cepat dan memandu intervensi real-time—memastikan pengobatan yang tepat dan tepat waktu dari sumbernya.",
+    "videoLabels": ["Tumor", "Setelah Pengangkatan"],
+    "certKicker": "SERTIFIKASI",
+    "certTitle": "Persetujuan Registrasi CFDA Diperoleh",
+    "certDesc": "Produk kami telah mendapatkan persetujuan registrasi cFDA, menunjukkan kepatuhan terhadap standar regulasi ketat untuk keamanan, kualitas, dan kelayakan klinis.",
+    "certBody": "Dengan persetujuan registrasi cFDA yang diperoleh, produk ini telah memasuki penerapan komersial, mendukung alur kerja skrining klinis dan riset translasional. Kemampuan ganda mereka menjembatani antara penemuan laboratorium dan aplikasi klinis nyata, mempercepat inovasi dalam diagnostik onkologi.",
+    "valueKicker": "PROPOSISI NILAI",
+    "valueTitle": "Tentukan margin. Deteksi penyebaran. Hadirkan presisi.",
+    "valueDesc": "GTTN-Navi adalah perangkat navigasi bedah generasi berikutnya yang menyediakan visualisasi real-time batas tumor selama prosedur, memungkinkan ahli bedah mengidentifikasi jaringan ganas dengan presisi lebih tinggi.",
+    "valuePoints": [
+      "Visualisasi margin tumor real-time",
+      "Akurasi spasial tinggi untuk panduan bedah",
+      "Perangkat medis Kelas III dalam tinjauan Breakthrough Device"
+    ]
+  },
+  "gttnTx": {
+    "heroSubtitle": "Sistem pengiriman terapi tertarget untuk pengobatan onkologi presisi.",
+    "contactDemo": "Hubungi untuk Demo",
+    "devBadge": "DALAM PENGEMBANGAN",
+    "devTitle": "Terapi Presisi. Hadir 2029.",
+    "devDesc": "GTTN-Tx telah mendapatkan klasifikasi sebagai kombinasi obat-perangkat dan kini dalam tinjauan perangkat inovatif. Dengan proyeksi persetujuan pada 2029, ini mewakili batas berikutnya dalam pengobatan onkologi tertarget—mengantarkan muatan terapeutik langsung ke inti sel tumor dengan presisi tak tertandingi.",
+    "stats": [
+      { "value": "> 50%", "label": "Efisiensi penargetan inti" },
+      { "value": "2029", "label": "Proyeksi persetujuan" },
+      { "value": "Kelas III", "label": "Kombinasi obat-perangkat" }
+    ],
+    "milestonesTitle": "Tonggak Pengembangan Utama",
+    "milestones": [
+      { "label": "Klasifikasi kombinasi obat-perangkat diperoleh", "desc": "Berhasil diklasifikasikan dalam jalur perangkat inovatif" },
+      { "label": "Studi pra-klinis selesai", "desc": "Menunjukkan efikasi dan keamanan pada model hewan" },
+      { "label": "Uji klinis Fase I", "desc": "Dijadwalkan dimulai setelah tinjauan regulasi" },
+      { "label": "Pengajuan regulasi", "desc": "Target pengajuan sebelum 2027" },
+      { "label": "Persetujuan komersial", "desc": "Proyeksi pada 2029" }
+    ]
+  },
+  "header": {
+    "dropdownTitle": "Pipeline Produk"
   }
 }

@@ -17,8 +17,8 @@ export function getInitialLocale(): SupportedLocale {
   return 'en'
 }
 
-export function setLocaleRef(localeRef: { value: string }, next: SupportedLocale) {
-  localeRef.value = next
+export function setLocale(next: SupportedLocale) {
+  i18n.global.locale.value = next
   localStorage.setItem(STORAGE_KEY, next)
   document.documentElement.lang = next
 }
